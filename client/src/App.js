@@ -6,7 +6,7 @@ function App() {
   const [message, setMessage] = React.useState(null);
 
   React.useEffect(()=>{
-    fetch('/api')
+    fetch('/api/getImage')
     .then((res) => res.json())
     .then((data) => setMessage(data.message));
   })
